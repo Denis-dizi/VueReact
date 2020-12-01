@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    
+    <div id="vue-wrapper">
+        test
+        <h1> {{text}} </h1>
+        <h2>You have clicked {{clickCount}} times.</h2>
+
+        <!-- (1:08:) -->
+        <button v-on:click="addOne">Add one</button>
+        <button v-on:click="removeOne">Remoove one</button>
+    </div>
 </body>
+<script src="./vue.js"></script>
 </html>
