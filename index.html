@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vue W10D3</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <div id="vue-wrapper">
-        test
         <h1> {{text}} </h1>
         <h2>You have clicked {{clickCount}} times.</h2>
 
         <!-- (1:08:) -->
         <button v-on:click="addOne">Add one</button>
-        <button v-on:click="removeOne">Remoove one</button>
+        <button v-on:click="removeOne">Remoove one</button><br><hr>
+
+        <!-- (1:15:) -->
+        <my-btn1></my-btn1><br><hr>
+        <my-btn2 text="button 2"></my-btn2>
+        <my-btn2 text="another btn"></my-btn2>
+        <my-btn2></my-btn2>
     </div>
 </body>
 <script src="./vue.js"></script>
